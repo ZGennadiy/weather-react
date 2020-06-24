@@ -1,19 +1,14 @@
 import React from 'react';
-import Search from './components/Search';
-
-import 'normalize.css';
-
-const api = {
-  locationURL: 'https://www.metaweather.com/api/location/search/?query'
-};
+import DisplayWeather from './components/DisplayWeather';
 
 
 
 function App() {
+
   return (
-    <div className="App weather-warm">
+      <div className="App">
       <main>
-        <Search/>
+        <DisplayWeather />
       </main>
     </div>
   );

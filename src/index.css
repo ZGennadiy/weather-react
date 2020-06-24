@@ -3,18 +3,14 @@
 }
 
 body {
-  font-family: 'monserat' sans-serif;
+  font-family: 'monserat', sans-serif;
 }
 
 .App {
-  background-image: url('./assets/cold-bg.jpg');
+  background-image: url('./assets/bg.jpg');
   background-size: cover;
   background-position: bottom;
-  transition: 0.4 ease-out;
-}
-
-.weather-warm {
-  background-image: url('./assets/warm-bg.jpg');
+  transition: 0.4s ease-out;
 }
 
 main {
