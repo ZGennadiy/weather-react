@@ -1,6 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Wether Forecast
+
+[Live Demo](https://weather.zgennadiy.com/)
+![Weather Gif](weather.gif "Weather Gif")
+
+### Available Scripts
 
 In the project directory, you can run:
 
