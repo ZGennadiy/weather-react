@@ -1,13 +1,17 @@
 .search {
   width: 100%; 
-  margin: 0 auto 75px;
+  margin-bottom: 75px;
+  @media (max-width: 800px) {
+    margin-bottom: 50px;
+  }
   
 
   & .search__bar {
     display: block;
     width: 100%;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0 0 10px 16px;
     box-shadow: 0 5px rgba(0, 0, 0, 0.2);
 
@@ -16,8 +20,13 @@
     outline: none;
 
     &:focus {
-      background-color: rgba(255, 255, 255, 0.75);
-      transition: 0.4s ease-out;
+      background-color: rgba(255, 255, 255, 0.5);
+      transition: 0.4s ease;
+    }
+    
+    &::placeholder{
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
     }
   } 
 }
@@ -25,17 +34,20 @@
 .location {
   color: #FFF;
   text-align: center;
-  transition: 0.4s ease-out;
+  transition: 0.4s ease;
 
   &__city {
-    font-size: 32px;
+    font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 3px 3px 3px rgba(50, 50, 70, 0.5);
+    @media (max-width: 990px) {
+        font-size: 2rem;
+    }
   }
 
   .date {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 300;
     font-style: italic;
     text-shadow: 2px 2px 2px rgba(50, 50, 70, 0.5);
@@ -84,7 +96,7 @@
   }
   
   &__temperature {
-    font-size: 42px;
+    font-size: 3rem;
 
   }
 
@@ -95,13 +107,16 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 10px;
+    @media (max-width: 990px) {
+      align-items: center;
+    }
   }
 
   &__descr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.2rem;
     margin: 15px 0;
 
   }

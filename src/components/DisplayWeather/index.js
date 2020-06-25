@@ -15,12 +15,12 @@ const Search = () => {
         .then((res) => res.json())
         .then((result) => {
           setWeather(result);
-          setQuery('');
-          console.log(result);
+          if (!result.error) {
+            setQuery('');
+          }
         })
         .catch((err) => {
           console.error(err)
-          setWeather(err)
         })
     }
   }
