@@ -7,13 +7,15 @@ import useSearch from '../../assets/useSearch.svg';
 const Search = () => {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
-  const { key , forecast } = api;
-
+  const { key , http, https } = api;
+  const { protocol } = window.location;
+  const baseUrl = protocol === 'http:' ? http : https;
+  
   const search = (evt) => {
     if (evt.key === 'Enter' && query !== '') {
-      fetch(`${forecast}key=${key}&q=${query}&lang=ru&days=3`)
-        .then((res) => res.json())
-        .then((result) => {
+      fetch(`${baseUrl}key=${key}&q=${query}&lang=ru&days=3`)
+      .then((res) => res.json())
+      .then((result) => {
           setWeather(result);
           if (!result.error) {
             setQuery('');
