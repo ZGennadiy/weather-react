@@ -61,7 +61,7 @@ const Search = () => {
 
         return (
           <div className={[s.weather, s.weather__dayly].join(' ')} key={`${day}${month}`}>
-              <div className={s.weather__day}>{`${day}/${month}`}</div>
+              <div className={s.weather__day}>{`${day} / ${month}`}</div>
             <div className={s.weather__wrapper}>
               <div className={s.weather__main}>
                 <img className={s.weather__icon} src={`http://${icon.substring(2)}`} alt={`${day} ${month} weather icon`}/>
@@ -94,6 +94,7 @@ const Search = () => {
           </div>
           <div className={s.weather__descr}><div>{text}</div></div> 
           </div>
+          <hr/>
           <div className={s.weather__forecastDayly}>
             {[day1, day2, day3].map(daylyMap)}
           </div>
