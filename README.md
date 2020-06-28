@@ -3,7 +3,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Wether Forecast
 
 [Live Demo](https://weather.zgennadiy.com/)
-![Weather Gif](weather.gif "Weather Gif")
+
+<img src="weather.gif" alt="Weather Gif" width="500"/>
+
 
 ### Available Scripts
 
