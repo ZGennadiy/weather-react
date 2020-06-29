@@ -1,0 +1,14 @@
+.location {
+  color: #FFF;
+  text-align: center;
+  transition: 0.4s ease;
+
+  &__city {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgba(50, 50, 70, 0.5);
+    @media (max-width: 990px) {
+        font-size: 2rem;
+    }
+  }
+}
